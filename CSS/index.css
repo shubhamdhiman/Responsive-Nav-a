@@ -220,7 +220,7 @@ main .header p span{
     height:max-content;
 }
 .mobile ul.nav-list li{
-    /* margin-left:0; */
+    margin-left:0;
     text-align:center;
 }
 
