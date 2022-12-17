@@ -3,12 +3,23 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    -webkit-font-smoothing:antialiased;
     
 }
 
-:root{
+.yellow{
     --primary: #d2ed3d;
+}
+.orange{
+    --primary:orange;
+}
+.violet{
+    --primary:violet;
+}
+.green{
+    --primary:green;
+}
+
+:root{
     --dark: #232323;
     --pure:#fff;
     --smoke:whitesmoke;
@@ -229,4 +240,26 @@ main .header p span{
 }
 .mobile .nav-wrapper ul.dropdown-list li a:hover{
     color:var(--primary);
+}
+
+
+
+
+/* Theme css */
+
+select{
+    display: inline-block;
+    height:30px;
+    width:140px;
+    padding:2px 10px;
+    outline:none;
+    /* color:var(--primary); */
+    background:var(--primary);
+    border:none;
+    border-radius:2px;
+    letter-spacing: 0.5px;
+    font-weight:600;
+}
+select option{
+    font-weight:600;
 }

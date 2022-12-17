@@ -38,3 +38,31 @@ hamburger.addEventListener('click',function(){
     }
     
 })
+
+//Theme Switch Script
+
+
+
+// If there is nothing in local storage then local storage will return null and default theme will be applied
+
+const themevar = document.querySelector('#theme');
+
+const defaultTheme = localStorage.getItem('theme') || 'yellow';
+changeTheme(defaultTheme);
+
+
+themevar.addEventListener('change',(e) => {
+    // console.log(e.target.value);
+    changeTheme(e.target.value);
+})
+
+function changeTheme(theme){
+    theme = theme || 'yellow';
+    
+    // console.log(theme);
+    document.documentElement.className = theme;
+
+    // Storing the previos value of theme in local storage
+    localStorage.setItem('theme',theme);
+    themevar.value = theme;
+}
