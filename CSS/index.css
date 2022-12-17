@@ -166,7 +166,9 @@ main .header p span{
 
 
 /* Responsive Code */
-
+.mobile .brand span strong{
+    color:var(--primary);
+}
 .hamburger{
     display:none;
 }
